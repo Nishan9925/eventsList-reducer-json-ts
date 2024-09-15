@@ -31,6 +31,7 @@ export enum ActionTypes {
   Update_Event,
   Set_Events,
   Set_Filter,
+  Set_Delete,
 }
 
 export enum FilterTypes {

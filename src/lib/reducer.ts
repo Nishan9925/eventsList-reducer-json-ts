@@ -12,6 +12,11 @@ export const reducer = (state: IState, action: Action): IState => {
         ...state,
         currentFilter: action.payload as FilterTypes
       }
+      case ActionTypes.Set_Delete:
+      return {
+        ...state,
+        events: action.payload as IEvent[],
+      }
     default:
       return state;
   }
